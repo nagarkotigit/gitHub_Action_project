@@ -7,18 +7,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 @SpringBootApplication
 public class GitHubActionProjectApplication {
 
-
+	/**
+	 * A description of the entire Java function.
+	 *
+	 * @return         	description of return value
+	 */
 	@GetMapping("/login")
 	public String login(){
 		return "login welcome";
 	}
-/*	echo "# gitHub_Action_project" >> README.md
-	git init
-	git add README.md
-	git commit -m "first commit"
-	git branch -M main
-	git remote add origin https://github.com/nagarkotigit/gitHub_Action_project.git
-	git push -u origin main*/
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(GitHubActionProjectApplication.class, args);
